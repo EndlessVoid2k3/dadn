@@ -7,6 +7,7 @@ import { useSelectedLayoutSegment } from 'next/navigation';
 
 import { useScroll } from 'framer-motion';
 import { cn } from '../../lib/utils';
+import NotificationDropdown from "./notification";
 
 const Header = () => {
   const scrolled = useScroll(5);
@@ -32,6 +33,7 @@ const Header = () => {
             <span className="font-bold text-xl flex ">Logo</span>
           </Link>
         </div>
+        <NotificationDropdown/>
       </div>
     </div>
   );
